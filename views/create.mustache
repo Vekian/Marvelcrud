@@ -1,0 +1,18 @@
+<html>
+ <head>
+  </head>
+    <body>
+        <form action="/traitement-create" method="POST">
+            <input type="text" name="nom" />
+            <input type="text" name="description" />
+            <select name ="equipe_id">
+                {{#equipes}}
+                    <option value={{id}}>
+                        {{nomEquipe}}
+                    </option>
+                {{/equipes}}
+            </select>
+            <input type="submit" value="créer"/>
+        </form>
+    </body>
+</html>
